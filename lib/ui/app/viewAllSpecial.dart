@@ -1,4 +1,4 @@
-import "package:firebase_connect/ui/app/exploreAndBookScreen.dart";
+// import "package:firebase_connect/ui/app/exploreAndBookScreen.dart";
 import "package:firebase_database/firebase_database.dart";
 import "package:flutter/material.dart";
 import "./addDataScreen.dart";
@@ -237,11 +237,9 @@ class SpecialPlaceCard extends StatelessWidget {
       child: Column(
         children: [
           InkWell(
-            onTap: () => Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (contexxt) =>
-                        ExploreAndBook(specialPlace["networkUrl"],id.toString(),specialPlace,ref))),
+            onTap: () => {
+              
+            },
             child: Stack(
               alignment: Alignment.bottomRight,
               children: [
